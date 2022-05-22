@@ -49,6 +49,7 @@ suma = 0
 for i in range(n):
     str1 =""
     m = input().strip()
+    print(m)
     m = m.split()
     prac = Pracownik(m[0],m[1])
     funk = prac.oblicz_skladki()
