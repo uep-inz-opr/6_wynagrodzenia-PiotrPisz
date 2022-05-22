@@ -56,6 +56,7 @@ for i in range(n):
     suma = suma + funk[-1]
     for ele in funk:
         str1 += str(ele) +" "
+    str1 = str1[:-1]
     print(str1)
 suma = round(suma)
 suma = "{:.2f}".format(suma)
