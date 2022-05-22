@@ -58,7 +58,7 @@ for i in range(n):
         str1 += str(ele) +" "
     str1 = str1[:-1]
     print(str1)
-suma = round(suma)
+suma = round(suma, 2)
 suma = "{:.2f}".format(suma)
 print(suma)
 
