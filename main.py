@@ -34,7 +34,9 @@ class Pracownik:
         j = round(j)
         netto = brutto - c - zdrowotna - j
         netto = round(netto, 2)
-        skladki_pracodawcy =  emerytalna + 0.065*brutto + wypadkowa + fp + fgsp
+        orangutan = 0.065*brutto
+        orangutan = round(orangutan, 2)
+        skladki_pracodawcy =  emerytalna + orangutan + wypadkowa + fp + fgsp
         skladki_pracodawcy = round(skladki_pracodawcy, 2)
         koszt_pracodawcy = skladki_pracodawcy + brutto
         koszt_pracodawcy = round(koszt_pracodawcy, 2)
@@ -49,7 +51,6 @@ suma = 0
 for i in range(n):
     str1 =""
     m = input().strip()
-    print(m)
     m = m.split()
     prac = Pracownik(m[0],m[1])
     funk = prac.oblicz_skladki()
