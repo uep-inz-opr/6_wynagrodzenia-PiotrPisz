@@ -46,8 +46,8 @@ n = input()
 n = int(n)
 wyniki= []
 suma = 0
-str1 =""
 for i in range(n):
+    str1 =""
     m = input().strip()
     m = m.split()
     prac = Pracownik(m[0],m[1])
